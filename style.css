@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-color: #381e82;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #aee8ff;
+}
+
+main {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 4rem 5rem;
+    gap: 5rem;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+ion-icon {
+    color: var(--main-color);
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h1 {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.info {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #6d6d6d;
+}
+
+.line {
+    width: 2px;
+    height: 35rem;
+    background-color: var(--main-color);
+}
+
+form,
+input,
+textarea {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 1.2rem 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: #dbdbdb;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 15rem;
+}
+
+.right p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #535353;
+    margin-top: 2px;
+}
+
+button {
+    color: #fff;
+    background: var(--main-color);
+    padding: 1rem 1.8rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:active {
+    opacity: 0.75;
+}
+
+@media (max-width: 1226px) {
+    main {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 55%;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 3rem;
+        width: 95%;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 780px) {
+    body {
+        padding: 4rem 0;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .left {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 536px) {
+    .left {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 2rem;
+        gap: 5rem;
+    }
+}

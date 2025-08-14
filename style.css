@@ -20,6 +20,11 @@ html {
     font-size: 62.5%;
 }
 
+.left {
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -157,12 +162,25 @@ button:active {
 }
 
 @media (max-width: 536px) {
-    .left {
-        flex-direction: column;
+    ion-icon {
+        font-size: 3rem;
     }
 
     main {
         padding: 2rem;
-        gap: 5rem;
+        gap:4rem;
+        width: 94%;
+    }
+
+    .left {
+        gap: 1rem;
+    }
+
+    .info {
+        font-size: 1.09rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
     }
 }

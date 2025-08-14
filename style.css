@@ -179,8 +179,11 @@ button:active {
     .info {
         font-size: 1.09rem;
     }
-
+    body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }

@@ -33,7 +33,7 @@ html {
 
 body {
     min-height: 100vh;
-    background-color: #aee8ff;
+    background-color: var(--main-color);
 }
 
 main {
@@ -85,12 +85,14 @@ textarea {
     padding: 1.2rem 1.8rem;
     font-size: 1.8rem;
     font-weight: 500;
-    background: #dbdbdb;
+    background: #e6e6e6;
     border: none;
     box-sizing: border-box;
     border-radius: 4px;
 }
-
+input:focus,textarea:focus{
+    outline-color: #381e82;
+}
 textarea {
     height: 15rem;
 }
@@ -173,6 +175,7 @@ button:active {
     }
 
     .left {
+        align-items: flex-start;
         gap: 1rem;
     }
 
